@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pemeliharaan | Moentaz ProVision</title>
+  <link rel="icon" type="image/jpeg" href="Blue Y2K Creative Star Class Logo.jpg"/>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #1a1a2e, #16213e, #0f3460);
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      color: white; overflow: hidden;
+    }
+    /* Animated grid background */
+    .grid-bg {
+      position: fixed; inset: 0; pointer-events: none;
+      background-image:
+        linear-gradient(rgba(91,79,207,0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(91,79,207,0.1) 1px, transparent 1px);
+      background-size: 50px 50px;
+      animation: gridMove 20s linear infinite;
+    }
+    @keyframes gridMove {
+      0%   { transform: translateY(0); }
+      100% { transform: translateY(50px); }
+    }
+    .container {
+      text-align: center; padding: 40px 24px;
+      position: relative; z-index: 1; max-width: 600px;
+    }
+    .logo {
+      width: 90px; height: 90px; border-radius: 50%;
+      object-fit: cover; border: 3px solid rgba(255,255,255,0.3);
+      box-shadow: 0 0 40px rgba(91,79,207,0.8);
+      margin-bottom: 28px;
+    }
+    .gear-wrap {
+      font-size: 80px; margin-bottom: 16px;
+      display: inline-block;
+      animation: spin 4s linear infinite;
+    }
+    @keyframes spin { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
+    .title {
+      font-size: 32px; font-weight: 900; margin-bottom: 12px;
+      background: linear-gradient(135deg, #fbbf24, #f59e0b);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .subtitle { font-size: 18px; font-weight: 600; margin-bottom: 10px; opacity: 0.9; }
+    .desc { font-size: 14px; opacity: 0.6; line-height: 1.7; margin-bottom: 32px; }
+    .progress-wrap {
+      background: rgba(255,255,255,0.1); border-radius: 50px;
+      height: 8px; margin: 0 auto 32px; max-width: 400px; overflow: hidden;
+    }
+    .progress-bar {
+      height: 100%; border-radius: 50px;
+      background: linear-gradient(90deg, #5b4fcf, #a78bfa, #60a5fa);
+      animation: progress 3s ease-in-out infinite alternate;
+    }
+    @keyframes progress {
+      from { width: 30%; }
+      to   { width: 85%; }
+    }
+    .info-box {
+      background: rgba(255,255,255,0.05); border: 1px solid rgba(255,255,255,0.1);
+      border-radius: 16px; padding: 20px 28px; margin-bottom: 28px;
+      display: inline-block; text-align: left;
+    }
+    .info-row { display: flex; align-items: center; gap: 10px; margin-bottom: 10px; font-size: 14px; }
+    .info-row:last-child { margin-bottom: 0; }
+    .info-row span:first-child { font-size: 18px; }
+    .contact-link {
+      display: inline-block; padding: 12px 28px;
+      background: rgba(255,255,255,0.1); border: 1px solid rgba(255,255,255,0.2);
+      color: white; text-decoration: none; border-radius: 50px;
+      font-size: 14px; font-weight: 600; transition: all 0.3s;
+    }
+    .contact-link:hover { background: rgba(255,255,255,0.2); }
+    .brand { margin-top: 32px; font-size: 12px; opacity: 0.3; }
+  </style>
+</head>
+<body>
+  <div class="grid-bg"></div>
+  <div class="container">
+    <img src="Blue Y2K Creative Star Class Logo.jpg" alt="Logo" class="logo"/>
+    <div class="gear-wrap">⚙️</div>
+    <h1 class="title">Sedang Pemeliharaan</h1>
+    <p class="subtitle">Website sedang dalam proses peningkatan</p>
+    <p class="desc">
+      Tim kami sedang bekerja keras untuk memberikan pengalaman belanja yang lebih baik.<br>
+      Kami akan segera kembali. Terima kasih atas kesabaran Anda!
+    </p>
+    <div class="progress-wrap"><div class="progress-bar"></div></div>
+    <div class="info-box">
+      <div class="info-row"><span>📅</span><span>Estimasi selesai: Beberapa jam lagi</span></div>
+      <div class="info-row"><span>📧</span><span>officialcctvstore@gmail.com</span></div>
+      <div class="info-row"><span>📱</span><span>0857-1254-3675 (WhatsApp)</span></div>
+    </div>
+    <br/>
+    <a href="https://wa.me/6285712543675" class="contact-link">💬 Hubungi Kami via WhatsApp</a>
+    <p class="brand">Moentaz ProVision &copy; 2026</p>
+  </div>
+</body>
+</html>

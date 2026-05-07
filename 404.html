@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>404 - Halaman Tidak Ditemukan | Moentaz ProVision</title>
+  <link rel="icon" type="image/jpeg" href="Blue Y2K Creative Star Class Logo.jpg"/>
+  <style>
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      color: white; overflow: hidden;
+    }
+    .stars {
+      position: fixed; inset: 0; pointer-events: none;
+      background-image:
+        radial-gradient(1px 1px at 20% 30%, white, transparent),
+        radial-gradient(1px 1px at 80% 10%, white, transparent),
+        radial-gradient(1px 1px at 50% 60%, white, transparent),
+        radial-gradient(1px 1px at 10% 80%, white, transparent),
+        radial-gradient(1px 1px at 90% 70%, white, transparent),
+        radial-gradient(2px 2px at 40% 20%, rgba(255,255,255,0.6), transparent),
+        radial-gradient(2px 2px at 70% 50%, rgba(255,255,255,0.4), transparent),
+        radial-gradient(1px 1px at 30% 90%, white, transparent),
+        radial-gradient(1px 1px at 60% 40%, white, transparent),
+        radial-gradient(1px 1px at 15% 55%, white, transparent);
+    }
+    .container {
+      text-align: center; padding: 40px 24px; position: relative; z-index: 1;
+      max-width: 600px;
+    }
+    .logo {
+      width: 80px; height: 80px; border-radius: 50%;
+      object-fit: cover; border: 3px solid rgba(255,255,255,0.4);
+      box-shadow: 0 0 30px rgba(91,79,207,0.6);
+      margin-bottom: 24px;
+      animation: float 3s ease-in-out infinite;
+    }
+    @keyframes float {
+      0%,100% { transform: translateY(0); }
+      50%      { transform: translateY(-12px); }
+    }
+    .code {
+      font-size: clamp(80px, 20vw, 160px);
+      font-weight: 900; line-height: 1;
+      background: linear-gradient(135deg, #a78bfa, #60a5fa, #f472b6);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: none;
+      animation: glow 2s ease-in-out infinite alternate;
+    }
+    @keyframes glow {
+      from { filter: drop-shadow(0 0 10px rgba(167,139,250,0.5)); }
+      to   { filter: drop-shadow(0 0 30px rgba(96,165,250,0.8)); }
+    }
+    .title { font-size: 24px; font-weight: 700; margin: 12px 0 8px; opacity: 0.9; }
+    .desc  { font-size: 15px; opacity: 0.6; margin-bottom: 36px; line-height: 1.6; }
+    .btn-home {
+      display: inline-block; padding: 14px 36px;
+      background: linear-gradient(135deg, #5b4fcf, #7b6fe8);
+      color: white; text-decoration: none; border-radius: 50px;
+      font-weight: 700; font-size: 15px;
+      box-shadow: 0 4px 20px rgba(91,79,207,0.5);
+      transition: all 0.3s;
+    }
+    .btn-home:hover { transform: translateY(-3px); box-shadow: 0 8px 30px rgba(91,79,207,0.7); }
+    .brand { margin-top: 40px; font-size: 13px; opacity: 0.4; }
+  </style>
+</head>
+<body>
+  <div class="stars"></div>
+  <div class="container">
+    <img src="Blue Y2K Creative Star Class Logo.jpg" alt="Logo" class="logo"/>
+    <div class="code">404</div>
+    <h1 class="title">Halaman Tidak Ditemukan</h1>
+    <p class="desc">Oops! Halaman yang kamu cari tidak ada atau sudah dipindahkan.<br>Mungkin URL-nya salah ketik?</p>
+    <a href="index.html" class="btn-home">🏠 Kembali ke Beranda</a>
+    <p class="brand">Moentaz ProVision &copy; 2026</p>
+  </div>
+</body>
+</html>
